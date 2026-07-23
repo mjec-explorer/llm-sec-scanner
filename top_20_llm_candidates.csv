@@ -1,0 +1,21 @@
+﻿rank,model_id,task,downloads,classification,hf_provider_available,hf_providers,inference_route,generated_date
+1,google-t5/t5-small,translation,27.8M,Manual review required,True,hf-inference,Hugging Face Inference Providers,2026-07-18
+2,Qwen/Qwen3-0.6B,text-generation,26.7M,Strong LLM candidate,True,featherless-ai,Hugging Face Inference Providers,2026-07-18
+3,Qwen/Qwen3-8B,text-generation,17.3M,Strong LLM candidate,True,"featherless-ai, nscale",Hugging Face Inference Providers,2026-07-18
+4,facebook/opt-125m,text-generation,15.9M,Strong LLM candidate,False,,No Hugging Face provider found,2026-07-18
+5,openai-community/gpt2,text-generation,14.0M,Strong LLM candidate,False,,No Hugging Face provider found,2026-07-18
+6,google/gemma-4-26B-A4B-it,image-text-to-text,14.0M,Strong LLM candidate,True,"deepinfra, featherless-ai, novita, scaleway",Hugging Face Inference Providers,2026-07-18
+7,trl-internal-testing/tiny-Qwen2ForCausalLM-2.5,text-generation,13.6M,Strong LLM candidate,False,,No Hugging Face provider found,2026-07-18
+8,Qwen/Qwen2.5-1.5B-Instruct,text-generation,13.3M,Strong LLM candidate,True,featherless-ai,Hugging Face Inference Providers,2026-07-18
+9,google/gemma-4-31B-it,image-text-to-text,12.6M,Strong LLM candidate,True,"cerebras, deepinfra, featherless-ai, novita, together",Hugging Face Inference Providers,2026-07-18
+10,Qwen/Qwen2.5-7B-Instruct,text-generation,12.0M,Strong LLM candidate,True,"featherless-ai, together",Hugging Face Inference Providers,2026-07-18
+11,Qwen/Qwen2.5-VL-7B-Instruct,image-text-to-text,10.1M,Strong LLM candidate,True,featherless-ai,Hugging Face Inference Providers,2026-07-18
+12,meta-llama/Llama-3.2-1B-Instruct,text-generation,10.1M,Strong LLM candidate,True,featherless-ai,Hugging Face Inference Providers,2026-07-18
+13,Qwen/Qwen3.5-9B,image-text-to-text,9.4M,Strong LLM candidate,True,"deepinfra, featherless-ai, ovhcloud, together",Hugging Face Inference Providers,2026-07-18
+14,deepseek-ai/DeepSeek-R1,text-generation,8.9M,Strong LLM candidate,True,novita,Hugging Face Inference Providers,2026-07-18
+15,nvidia/Qwen3.6-35B-A3B-NVFP4,text-generation,8.8M,Strong LLM candidate,False,,No Hugging Face provider found,2026-07-18
+16,meta-llama/Llama-3.1-8B-Instruct,text-generation,8.3M,Strong LLM candidate,True,"deepinfra, featherless-ai, novita, nscale",Hugging Face Inference Providers,2026-07-18
+17,Qwen/Qwen3.6-35B-A3B-FP8,image-text-to-text,7.7M,Strong LLM candidate,False,,No Hugging Face provider found,2026-07-18
+18,openai/gpt-oss-20b,text-generation,7.5M,Strong LLM candidate,True,"deepinfra, featherless-ai, fireworks-ai, groq, novita, nscale, ovhcloud, together",Hugging Face Inference Providers,2026-07-18
+19,Qwen/Qwen3-32B,text-generation,7.2M,Strong LLM candidate,True,"deepinfra, featherless-ai, nscale",Hugging Face Inference Providers,2026-07-18
+20,Qwen/Qwen3.5-4B,image-text-to-text,6.7M,Strong LLM candidate,True,featherless-ai,Hugging Face Inference Providers,2026-07-18
