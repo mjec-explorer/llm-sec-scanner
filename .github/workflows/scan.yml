@@ -21,6 +21,11 @@ jobs:
       - name: Run scan
         run: python scan_model.py
 
+      - name: Upload SARIF to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results/openai-community--gpt2/results.sarif
+
       - name: Commit results back to repo
         run: |
           git config user.name "github-actions[bot]"
