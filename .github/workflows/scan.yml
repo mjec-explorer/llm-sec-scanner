@@ -3,6 +3,10 @@ name: LLM Artifact Scan
 on:
   workflow_dispatch:
 
+permissions:
+    contents: write
+    security-events: write
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -24,7 +28,7 @@ jobs:
       - name: Upload SARIF to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: results/openai-community--gpt2/results.sarif
+          sarif_file: results/
 
       - name: Commit results back to repo
         run: |
