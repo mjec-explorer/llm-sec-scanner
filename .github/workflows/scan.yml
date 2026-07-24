@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 permissions:
-    contents: write
-    security-events: write
+  contents: write
+  security-events: write
 
 jobs:
   scan:
@@ -25,10 +25,17 @@ jobs:
       - name: Run scan
         run: python scan_model.py
 
+      - name: Check for critical findings
+        run: |
+          FAILED=$(find results -name "modelaudit_raw.json" -exec jq -r '.success == false' {} \; | grep -c true || true)
+          if [ "$FAILED" -gt 0 ]; then
+            echo "ModelAudit found issues in $FAILED model(s)"
+          fi
+
       - name: Upload SARIF to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: results/
+          sarif_file: results
 
       - name: Commit results back to repo
         run: |
