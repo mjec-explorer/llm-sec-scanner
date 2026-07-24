@@ -1,0 +1,41 @@
+{
+  "model_id": "openai/gpt-oss-20b",
+  "scan_date": "2026-07-24T00:16:01.182218",
+  "modelscan_version": "0.8.8",
+  "license": "apache-2.0",
+  "base_model": null,
+  "dataset": {
+    "disclosed": "not disclosed",
+    "verification_level": "metadata_only"
+  },
+  "artifact_scan": {
+    "tool": "modelscan",
+    "total_scanned": 0,
+    "scanned_files": [],
+    "total_skipped": 2,
+    "skipped_files": [
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "config.json"
+      },
+      {
+        "category": "MAGIC_NUMBER",
+        "description": "Invalid magic number",
+        "source": "metal/model.bin"
+      }
+    ],
+    "issues": [],
+    "total_issues": 0,
+    "issues_by_severity": {
+      "LOW": 0,
+      "MEDIUM": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "errors": []
+  },
+  "behavioral_scan": null,
+  "vulnerability_scan": null,
+  "model_integrity_scan": null
+}

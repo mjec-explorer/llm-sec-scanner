@@ -1,0 +1,1028 @@
+{
+  "model_id": "facebook/opt-125m",
+  "scan_date": "2026-07-24T00:15:17.208457",
+  "modelscan_version": "0.8.8",
+  "license": "other",
+  "base_model": null,
+  "dataset": {
+    "disclosed": "not disclosed",
+    "verification_level": "metadata_only"
+  },
+  "artifact_scan": {
+    "tool": "modelscan",
+    "total_scanned": 1,
+    "scanned_files": [
+      "pytorch_model.bin:archive/data.pkl"
+    ],
+    "total_skipped": 199,
+    "skipped_files": [
+      {
+        "category": "MODEL_CONFIG",
+        "description": "Model Config not found",
+        "source": "tf_model.h5"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "config.json"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/0"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/1"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/10"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/100"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/101"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/102"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/103"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/104"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/105"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/106"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/107"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/108"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/109"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/11"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/110"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/111"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/112"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/113"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/114"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/115"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/116"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/117"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/118"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/119"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/12"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/120"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/121"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/122"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/123"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/124"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/125"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/126"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/127"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/128"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/129"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/13"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/130"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/131"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/132"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/133"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/134"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/135"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/136"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/137"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/138"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/139"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/14"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/140"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/141"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/142"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/143"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/144"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/145"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/146"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/147"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/148"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/149"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/15"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/150"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/151"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/152"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/153"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/154"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/155"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/156"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/157"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/158"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/159"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/16"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/160"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/161"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/162"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/163"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/164"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/165"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/166"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/167"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/168"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/169"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/17"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/170"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/171"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/172"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/173"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/174"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/175"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/176"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/177"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/178"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/179"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/18"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/180"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/181"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/182"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/183"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/184"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/185"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/186"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/187"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/188"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/189"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/19"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/190"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/191"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/192"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/193"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/194"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/195"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/2"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/20"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/21"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/22"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/23"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/24"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/25"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/26"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/27"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/28"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/29"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/3"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/30"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/31"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/32"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/33"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/34"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/35"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/36"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/37"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/38"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/39"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/4"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/40"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/41"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/42"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/43"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/44"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/45"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/46"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/47"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/48"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/49"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/5"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/50"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/51"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/52"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/53"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/54"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/55"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/56"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/57"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/58"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/59"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/6"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/60"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/61"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/62"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/63"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/64"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/65"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/66"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/67"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/68"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/69"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/7"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/70"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/71"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/72"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/73"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/74"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/75"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/76"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/77"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/78"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/79"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/8"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/80"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/81"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/82"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/83"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/84"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/85"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/86"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/87"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/88"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/89"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/9"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/90"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/91"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/92"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/93"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/94"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/95"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/96"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/97"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/98"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/data/99"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "pytorch_model.bin:archive/version"
+      }
+    ],
+    "issues": [],
+    "total_issues": 0,
+    "issues_by_severity": {
+      "LOW": 0,
+      "MEDIUM": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "errors": []
+  },
+  "behavioral_scan": null,
+  "vulnerability_scan": null,
+  "model_integrity_scan": null
+}

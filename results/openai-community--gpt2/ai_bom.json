@@ -1,0 +1,43 @@
+{
+  "model_id": "openai-community/gpt2",
+  "scan_date": "2026-07-24T00:15:21.965262",
+  "modelscan_version": "0.8.8",
+  "license": "mit",
+  "base_model": null,
+  "dataset": {
+    "disclosed": "not disclosed",
+    "verification_level": "metadata_only"
+  },
+  "artifact_scan": {
+    "tool": "modelscan",
+    "total_scanned": 1,
+    "scanned_files": [
+      "pytorch_model.bin"
+    ],
+    "total_skipped": 2,
+    "skipped_files": [
+      {
+        "category": "MODEL_CONFIG",
+        "description": "Model Config not found",
+        "source": "tf_model.h5"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "config.json"
+      }
+    ],
+    "issues": [],
+    "total_issues": 0,
+    "issues_by_severity": {
+      "LOW": 0,
+      "MEDIUM": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "errors": []
+  },
+  "behavioral_scan": null,
+  "vulnerability_scan": null,
+  "model_integrity_scan": null
+}

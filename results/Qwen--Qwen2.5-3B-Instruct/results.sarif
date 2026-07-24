@@ -1,0 +1,19 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ModelScan",
+          "informationUri": "https://github.com/protectai/modelscan",
+          "version": "0.8.8"
+        }
+      },
+      "automationDetails": {
+        "id": "modelscan/Qwen/Qwen2.5-3B-Instruct"
+      },
+      "results": []
+    }
+  ]
+}
