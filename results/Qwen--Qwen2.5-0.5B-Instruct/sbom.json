@@ -1,0 +1,86 @@
+{
+  "components": [
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/blobs/0dbb161213629a23f0fc00ef286e6b1e366d180f",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45"
+        }
+      ],
+      "name": "0dbb161213629a23f0fc00ef286e6b1e366d180f",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "659"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/blobs/fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+        }
+      ],
+      "name": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "988097824"
+        }
+      ],
+      "type": "machine-learning-model"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/blobs/0dbb161213629a23f0fc00ef286e6b1e366d180f"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/blobs/fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-07-24T11:40:12.714632+00:00"
+  },
+  "serialNumber": "urn:uuid:8bfbb28d-3af0-43d5-b4ca-975e85733cdf",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

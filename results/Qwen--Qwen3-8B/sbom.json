@@ -1,0 +1,220 @@
+{
+  "components": [
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/blobs/d46195ac87f837ad233d02b2f80f148bf7c005e0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+        }
+      ],
+      "name": "d46195ac87f837ad233d02b2f80f148bf7c005e0",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "728"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00001-of-00005.safetensors",
+      "name": "model-00001-of-00005.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00002-of-00005.safetensors",
+      "name": "model-00002-of-00005.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00003-of-00005.safetensors",
+      "name": "model-00003-of-00005.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00004-of-00005.safetensors",
+      "name": "model-00004-of-00005.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00005-of-00005.safetensors",
+      "name": "model-00005-of-00005.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/blobs/d46195ac87f837ad233d02b2f80f148bf7c005e0"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00001-of-00005.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00002-of-00005.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00003-of-00005.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00004-of-00005.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/model-00005-of-00005.safetensors"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-07-24T11:33:15.969679+00:00"
+  },
+  "serialNumber": "urn:uuid:020e1ecd-0d51-4996-b38a-e8616bdc74de",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

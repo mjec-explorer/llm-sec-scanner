@@ -1,0 +1,130 @@
+{
+  "components": [
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9"
+        }
+      ],
+      "name": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "properties": [
+        {
+          "name": "modelaudit:member_file_hashes",
+          "value": "{\"{\\\"occurrence\\\":1,\\\"path\\\":[\\\"archive/data.pkl\\\"]}\":{\"bytes_hashed\":24729,\"file_hashes\":{\"sha256\":\"09a6267bc598c1878856c2e7d33ddba6e45eb54c5e5f73e73c9dcc40e982d190\"},\"file_size\":24729,\"hash_complete\":true,\"logical_path\":\"archive/data.pkl\",\"occurrence\":1,\"path_segments\":[\"archive/data.pkl\"],\"scanner_name\":\"pickle\"}}"
+        },
+        {
+          "name": "modelaudit:member_file_hashes_total",
+          "value": "1"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "250540281"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/b3fb716a3024261980becb2382e31a3780985130",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "54162c9cd0377110df1859dfabebb106fc0988c8aadb88207ce1ee0d34985df6"
+        }
+      ],
+      "name": "b3fb716a3024261980becb2382e31a3780985130",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "651"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a"
+        }
+      ],
+      "name": "db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "250709016"
+        }
+      ],
+      "type": "file"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/b3fb716a3024261980becb2382e31a3780985130"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-07-24T11:31:35.903996+00:00"
+  },
+  "serialNumber": "urn:uuid:0132a8a1-2638-44d8-9c02-3971daf6f0e4",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

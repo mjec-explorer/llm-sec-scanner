@@ -1,7 +1,6 @@
 {
   "model_id": "Qwen/Qwen2.5-7B-Instruct",
-  "scan_date": "2026-07-24T00:15:22.639603",
-  "modelscan_version": "0.8.8",
+  "scan_date": "2026-07-24T11:35:45.593149",
   "license": "apache-2.0",
   "base_model": null,
   "dataset": {
@@ -10,14 +9,36 @@
   },
   "artifact_scan": {
     "tool": "modelscan",
+    "modelscan_version": "0.8.8",
+    "status": "completed",
     "total_scanned": 0,
     "scanned_files": [],
-    "total_skipped": 1,
+    "total_skipped": 5,
     "skipped_files": [
       {
         "category": "SCAN_NOT_SUPPORTED",
         "description": "Model Scan did not scan file",
+        "source": "model-00003-of-00004.safetensors"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "model-00001-of-00004.safetensors"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
         "source": "config.json"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "model-00002-of-00004.safetensors"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "model-00004-of-00004.safetensors"
       }
     ],
     "issues": [],
@@ -29,6 +50,20 @@
       "CRITICAL": 0
     },
     "errors": []
+  },
+  "artifact_scan_modelaudit": {
+    "tool": "modelaudit",
+    "status": "completed",
+    "exit_code": 0,
+    "strict_mode": true,
+    "files_scanned": 5,
+    "total_checks": 45,
+    "passed_checks": 45,
+    "failed_checks": 0,
+    "issues": [],
+    "success": true,
+    "sbom_path": "results/Qwen--Qwen2.5-7B-Instruct/sbom.json",
+    "stderr": null
   },
   "behavioral_scan": null,
   "vulnerability_scan": null,

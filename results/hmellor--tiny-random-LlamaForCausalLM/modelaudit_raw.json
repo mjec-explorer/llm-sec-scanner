@@ -1,0 +1,272 @@
+{
+  "bytes_scanned": 2128891,
+  "issues": [],
+  "checks": [
+    {
+      "name": "Path Exists",
+      "status": "passed",
+      "message": "Path exists",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10"
+      },
+      "timestamp": 1784893201.750034
+    },
+    {
+      "name": "Path Readable",
+      "status": "passed",
+      "message": "Path is readable",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10"
+      },
+      "timestamp": 1784893201.7500606
+    },
+    {
+      "name": "File Type Validation",
+      "status": "passed",
+      "message": "File type validation passed",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {},
+      "timestamp": 1784893201.750087
+    },
+    {
+      "name": "Header Length Validation",
+      "status": "passed",
+      "message": "SafeTensors header length is valid",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "header_len": 2208
+      },
+      "timestamp": 1784893201.7501671
+    },
+    {
+      "name": "Header Size Limit",
+      "status": "passed",
+      "message": "SafeTensors header is within configured size limit",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "header_len": 2208,
+        "max_allowed": 16777216
+      },
+      "timestamp": 1784893201.7501788
+    },
+    {
+      "name": "File Integrity Hash",
+      "status": "passed",
+      "message": "File integrity hashes calculated",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "md5": "22b7d70a3a4ce12395fc2b8b8bc846f1",
+        "sha256": "542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+        "sha512": "fc9773231dfdf0f3f583e3c577cc3e86ef0cb9f872b69b6352345e3ea93f5f276c50d82862e5476545b02f1e278383c4d0203d784a8aa59079639e0166c9273c",
+        "file_size": 2128200
+      },
+      "timestamp": 1784893201.7578907
+    },
+    {
+      "name": "Header Format Validation",
+      "status": "passed",
+      "message": "SafeTensors header format is valid JSON",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {},
+      "timestamp": 1784893201.7579184
+    },
+    {
+      "name": "SafeTensors Metadata Structure Validation",
+      "status": "passed",
+      "message": "SafeTensors custom metadata is a string-to-string map",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "entry_count": 1
+      },
+      "timestamp": 1784893201.7584388
+    },
+    {
+      "name": "Tensor Offset Validation",
+      "status": "passed",
+      "message": "Tensor lm_head.weight offsets are valid",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "tensor": "lm_head.weight",
+        "begin": 0,
+        "end": 1024000
+      },
+      "timestamp": 1784893201.761197
+    },
+    {
+      "name": "Tensor Size Consistency Check",
+      "status": "passed",
+      "message": "Tensor lm_head.weight size matches dtype/shape",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "tensor": "lm_head.weight",
+        "size": 1024000
+      },
+      "timestamp": 1784893201.7612267
+    },
+    {
+      "name": "Offset Continuity Check",
+      "status": "passed",
+      "message": "Tensor offsets are continuous without gaps",
+      "location": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "details": {
+        "total_offsets": 21
+      },
+      "timestamp": 1784893201.761326
+    }
+  ],
+  "files_scanned": 2,
+  "assets": [
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/22a34e2dd850c832603f419165bc30a2224e756a",
+      "type": "unknown"
+    },
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "type": "safetensors",
+      "size": 2128200,
+      "tensors": [
+        "lm_head.weight",
+        "model.embed_tokens.weight",
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.mlp.down_proj.weight",
+        "model.layers.0.mlp.gate_proj.weight",
+        "model.layers.0.mlp.up_proj.weight",
+        "model.layers.0.post_attention_layernorm.weight",
+        "model.layers.0.self_attn.k_proj.weight",
+        "model.layers.0.self_attn.o_proj.weight",
+        "model.layers.0.self_attn.q_proj.weight",
+        "model.layers.0.self_attn.v_proj.weight",
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.mlp.down_proj.weight",
+        "model.layers.1.mlp.gate_proj.weight",
+        "model.layers.1.mlp.up_proj.weight",
+        "model.layers.1.post_attention_layernorm.weight",
+        "model.layers.1.self_attn.k_proj.weight",
+        "model.layers.1.self_attn.o_proj.weight",
+        "model.layers.1.self_attn.q_proj.weight",
+        "model.layers.1.self_attn.v_proj.weight",
+        "model.norm.weight"
+      ]
+    }
+  ],
+  "has_errors": false,
+  "scanner_names": [
+    "safetensors"
+  ],
+  "file_metadata": {
+    "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/22a34e2dd850c832603f419165bc30a2224e756a": {
+      "member_file_hashes": {},
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784893201.7469225,
+      "scanner_dependency_ids": [
+        "unknown"
+      ],
+      "content_hash": "dcbec8a5f89bf62e32cadc8d0cf20cddc61d41b25f2e0cf1b7e768eb1ac8433b"
+    },
+    "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10": {
+      "file_size": 2128200,
+      "file_hashes": {
+        "md5": "22b7d70a3a4ce12395fc2b8b8bc846f1",
+        "sha256": "542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+        "sha512": "fc9773231dfdf0f3f583e3c577cc3e86ef0cb9f872b69b6352345e3ea93f5f276c50d82862e5476545b02f1e278383c4d0203d784a8aa59079639e0166c9273c"
+      },
+      "member_file_hashes": {},
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784893201.7652662,
+      "scanner_dependency_ids": [
+        "safetensors"
+      ],
+      "has_custom_metadata": true,
+      "custom_metadata_valid": true,
+      "custom_metadata_entry_count": 1,
+      "tensor_count": 21,
+      "tensors": [
+        "lm_head.weight",
+        "model.embed_tokens.weight",
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.mlp.down_proj.weight",
+        "model.layers.0.mlp.gate_proj.weight",
+        "model.layers.0.mlp.up_proj.weight",
+        "model.layers.0.post_attention_layernorm.weight",
+        "model.layers.0.self_attn.k_proj.weight",
+        "model.layers.0.self_attn.o_proj.weight",
+        "model.layers.0.self_attn.q_proj.weight",
+        "model.layers.0.self_attn.v_proj.weight",
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.mlp.down_proj.weight",
+        "model.layers.1.mlp.gate_proj.weight",
+        "model.layers.1.mlp.up_proj.weight",
+        "model.layers.1.post_attention_layernorm.weight",
+        "model.layers.1.self_attn.k_proj.weight",
+        "model.layers.1.self_attn.o_proj.weight",
+        "model.layers.1.self_attn.q_proj.weight",
+        "model.layers.1.self_attn.v_proj.weight",
+        "model.norm.weight"
+      ],
+      "tensor_count_reported": 21,
+      "tensor_metadata_truncated": false,
+      "max_reported_tensors": 1024,
+      "tensor_name_utf8_bytes": 732,
+      "max_tensor_name_utf8_bytes": 46,
+      "tensor_name_preview_truncated_count": 0,
+      "tensor_names_digest": "60f339a15e1ea964c2c775731549a633f7e7a19ec99794121efd8ef3bd208206",
+      "custom_metadata_security_record_counts": {
+        "Metadata Length Check": {
+          "failed": 0,
+          "reported": 0
+        },
+        "Metadata Code Pattern Check": {
+          "failed": 0,
+          "reported": 0
+        },
+        "Metadata Pattern Check": {
+          "failed": 0,
+          "reported": 0
+        }
+      },
+      "custom_metadata_length_finding_count": 0,
+      "custom_metadata_length_findings_truncated": false,
+      "custom_metadata_code_pattern_finding_count": 0,
+      "custom_metadata_code_pattern_findings_truncated": false,
+      "custom_metadata_pattern_finding_count": 0,
+      "custom_metadata_pattern_findings_truncated": false,
+      "tensor_name_injection_count": 0,
+      "tensor_name_injection_findings_truncated": false,
+      "tensor_metadata_injection_count": 0,
+      "tensor_metadata_injection_findings_truncated": false,
+      "custom_metadata_security_flags": [],
+      "tensor_validation_record_counts": {
+        "Tensor Offset Validation": {
+          "passed": 21,
+          "failed": 0,
+          "reported": 1
+        },
+        "Tensor Size Consistency Check": {
+          "passed": 21,
+          "failed": 0,
+          "reported": 1
+        }
+      },
+      "content_hash": "542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10"
+    }
+  },
+  "content_hash": "840f779547b41ea2d0323bcb90afb7fc31e276ee7d96eb7e6632ba8d4aa97b4d",
+  "start_time": 1784893200.8184297,
+  "duration": 0.9482676982879639,
+  "total_checks": 11,
+  "passed_checks": 11,
+  "failed_checks": 0,
+  "success": true
+}

@@ -1,7 +1,6 @@
 {
   "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
-  "scan_date": "2026-07-24T00:17:25.516194",
-  "modelscan_version": "0.8.8",
+  "scan_date": "2026-07-24T11:40:13.917857",
   "license": "apache-2.0",
   "base_model": null,
   "dataset": {
@@ -10,10 +9,17 @@
   },
   "artifact_scan": {
     "tool": "modelscan",
+    "modelscan_version": "0.8.8",
+    "status": "completed",
     "total_scanned": 0,
     "scanned_files": [],
-    "total_skipped": 1,
+    "total_skipped": 2,
     "skipped_files": [
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "model.safetensors"
+      },
       {
         "category": "SCAN_NOT_SUPPORTED",
         "description": "Model Scan did not scan file",
@@ -29,6 +35,20 @@
       "CRITICAL": 0
     },
     "errors": []
+  },
+  "artifact_scan_modelaudit": {
+    "tool": "modelaudit",
+    "status": "completed",
+    "exit_code": 0,
+    "strict_mode": true,
+    "files_scanned": 2,
+    "total_checks": 11,
+    "passed_checks": 11,
+    "failed_checks": 0,
+    "issues": [],
+    "success": true,
+    "sbom_path": "results/Qwen--Qwen2.5-0.5B-Instruct/sbom.json",
+    "stderr": null
   },
   "behavioral_scan": null,
   "vulnerability_scan": null,

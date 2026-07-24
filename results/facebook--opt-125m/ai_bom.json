@@ -1,7 +1,6 @@
 {
   "model_id": "facebook/opt-125m",
-  "scan_date": "2026-07-24T00:15:17.208457",
-  "modelscan_version": "0.8.8",
+  "scan_date": "2026-07-24T11:31:36.817933",
   "license": "other",
   "base_model": null,
   "dataset": {
@@ -10,6 +9,8 @@
   },
   "artifact_scan": {
     "tool": "modelscan",
+    "modelscan_version": "0.8.8",
+    "status": "completed",
     "total_scanned": 1,
     "scanned_files": [
       "pytorch_model.bin:archive/data.pkl"
@@ -1021,6 +1022,108 @@
       "CRITICAL": 0
     },
     "errors": []
+  },
+  "artifact_scan_modelaudit": {
+    "tool": "modelaudit",
+    "status": "completed",
+    "exit_code": 1,
+    "strict_mode": true,
+    "files_scanned": 3,
+    "total_checks": 28,
+    "passed_checks": 27,
+    "failed_checks": 1,
+    "issues": [
+      {
+        "message": "Pickle serialization format detected: GLOBAL(3), REDUCE(394) opcodes detected",
+        "severity": "info",
+        "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+        "details": {
+          "cve_id": "CVE-2025-32434",
+          "pickle_filename": "archive/data.pkl",
+          "opcode_counts": {
+            "GLOBAL": 3,
+            "REDUCE": 394
+          },
+          "total_dangerous_opcodes": 397,
+          "unique_opcode_types": [
+            "GLOBAL",
+            "REDUCE"
+          ],
+          "code_execution_risks": [
+            "__reduce__ method exploitation",
+            "Direct code execution patterns",
+            "Module import and attribute access"
+          ],
+          "nested_execution_opcode_evidence": false,
+          "import_analysis": {
+            "total_imports": 3,
+            "all_legitimate": true,
+            "found_malicious": [],
+            "found_imports": [
+              "torch._utils._rebuild_tensor_v2",
+              "torch.HalfStorage",
+              "collections.OrderedDict"
+            ]
+          },
+          "safetensors_available": false,
+          "assessment": "legitimate_but_risky_format",
+          "vulnerability_description": "The weights_only=True parameter in torch.load() does not prevent code execution from pickle files, contrary to common security assumptions.",
+          "recommendation": "This model uses pickle serialization format which allows code execution by design (CVE-2025-32434). While the current opcodes appear legitimate, consider requesting a SafeTensors version from the publisher for improved supply chain security.",
+          "affected_pytorch_versions": "All versions \u22642.5.1",
+          "fixed_in": "PyTorch 2.6.0"
+        },
+        "timestamp": 1784892694.4961953,
+        "type": "pytorch_zip_check",
+        "rule_code": "S201"
+      },
+      {
+        "message": "Found source-backed allowlisted global without inert import initialization proof: torch._utils._rebuild_tensor_v2",
+        "severity": "warning",
+        "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 46)",
+        "details": {
+          "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+          "opcode": "GLOBAL",
+          "module": "torch._utils",
+          "name": "_rebuild_tensor_v2",
+          "import_reference": "torch._utils._rebuild_tensor_v2",
+          "position": 46,
+          "source_backed_import_initialization_untrusted": true,
+          "function": "_rebuild_tensor_v2",
+          "associated_global": "torch._utils._rebuild_tensor_v2",
+          "pickle_rule_code": "NON_ALLOWLISTED_GLOBAL",
+          "pickle_filename": "archive/data.pkl"
+        },
+        "why": "Source-backed framework metadata can execute module-level code when pickle resolves an unloaded GLOBAL; suppress it only when the module is already loaded or import-time initialization is proven inert.",
+        "timestamp": 1784892694.4599721,
+        "type": "pickle_check",
+        "rule_code": "NON_ALLOWLISTED_GLOBAL"
+      },
+      {
+        "message": "Found source-backed allowlisted global without inert import initialization proof: torch.HalfStorage",
+        "severity": "warning",
+        "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 97)",
+        "details": {
+          "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+          "opcode": "GLOBAL",
+          "module": "torch",
+          "name": "HalfStorage",
+          "import_reference": "torch.HalfStorage",
+          "position": 97,
+          "source_backed_import_initialization_untrusted": true,
+          "function": "HalfStorage",
+          "associated_global": "torch.HalfStorage",
+          "pickle_rule_code": "NON_ALLOWLISTED_GLOBAL",
+          "pickle_filename": "archive/data.pkl"
+        },
+        "why": "Source-backed framework metadata can execute module-level code when pickle resolves an unloaded GLOBAL; suppress it only when the module is already loaded or import-time initialization is proven inert.",
+        "timestamp": 1784892694.4601636,
+        "type": "pickle_check",
+        "rule_code": "NON_ALLOWLISTED_GLOBAL"
+      }
+    ],
+    "success": false,
+    "sbom_path": "results/facebook--opt-125m/sbom.json",
+    "stderr": null
   },
   "behavioral_scan": null,
   "vulnerability_scan": null,

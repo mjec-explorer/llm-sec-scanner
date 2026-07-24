@@ -1,0 +1,186 @@
+{
+  "components": [
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/blobs/0178295f88afc3c7f279ed284f961f8c1be00654",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c"
+        }
+      ],
+      "name": "0178295f88afc3c7f279ed284f961f8c1be00654",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "663"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00001-of-00004.safetensors",
+      "name": "model-00001-of-00004.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00002-of-00004.safetensors",
+      "name": "model-00002-of-00004.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00003-of-00004.safetensors",
+      "name": "model-00003-of-00004.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00004-of-00004.safetensors",
+      "name": "model-00004-of-00004.safetensors",
+      "properties": [
+        {
+          "name": "ml:is_model",
+          "value": "true"
+        },
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "0"
+        }
+      ],
+      "type": "machine-learning-model"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/blobs/0178295f88afc3c7f279ed284f961f8c1be00654"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00001-of-00004.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00002-of-00004.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00003-of-00004.safetensors"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00004-of-00004.safetensors"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-07-24T11:35:45.166365+00:00"
+  },
+  "serialNumber": "urn:uuid:b51b259a-862e-41c6-839d-e32f78dcc5db",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

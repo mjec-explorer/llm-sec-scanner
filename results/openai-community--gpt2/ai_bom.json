@@ -1,7 +1,6 @@
 {
   "model_id": "openai-community/gpt2",
-  "scan_date": "2026-07-24T00:15:21.965262",
-  "modelscan_version": "0.8.8",
+  "scan_date": "2026-07-24T11:33:42.844156",
   "license": "mit",
   "base_model": null,
   "dataset": {
@@ -10,16 +9,23 @@
   },
   "artifact_scan": {
     "tool": "modelscan",
+    "modelscan_version": "0.8.8",
+    "status": "completed",
     "total_scanned": 1,
     "scanned_files": [
       "pytorch_model.bin"
     ],
-    "total_skipped": 2,
+    "total_skipped": 3,
     "skipped_files": [
       {
         "category": "MODEL_CONFIG",
         "description": "Model Config not found",
         "source": "tf_model.h5"
+      },
+      {
+        "category": "SCAN_NOT_SUPPORTED",
+        "description": "Model Scan did not scan file",
+        "source": "model.safetensors"
       },
       {
         "category": "SCAN_NOT_SUPPORTED",
@@ -36,6 +42,48 @@
       "CRITICAL": 0
     },
     "errors": []
+  },
+  "artifact_scan_modelaudit": {
+    "tool": "modelaudit",
+    "status": "completed",
+    "exit_code": 2,
+    "strict_mode": true,
+    "files_scanned": 4,
+    "total_checks": 21,
+    "passed_checks": 21,
+    "failed_checks": 0,
+    "issues": [
+      {
+        "message": "File too large: 548118077 bytes (max: 536870912)",
+        "severity": "info",
+        "location": "/home/runner/.cache/huggingface/hub/models--openai-community--gpt2/blobs/7c5d3f4b8b76583b422fcb9189ad6c89d5d97a094541ce8932dce3ecabde1421",
+        "details": {
+          "file_size": 548118077,
+          "max_file_read_size": 536870912,
+          "analysis_incomplete": true,
+          "scan_outcome_reason": "max_file_read_size_exceeded"
+        },
+        "why": "Large files may consume excessive memory or processing time. Consider whether this file size is expected for your use case.",
+        "timestamp": 1784892816.407657,
+        "type": "torch7_check",
+        "rule_code": "S904"
+      },
+      {
+        "message": "Flax MessagePack analysis incomplete because bounded routing inspection could not complete",
+        "severity": "info",
+        "location": "/home/runner/.cache/huggingface/hub/models--openai-community--gpt2/blobs/7c5d3f4b8b76583b422fcb9189ad6c89d5d97a094541ce8932dce3ecabde1421",
+        "details": {
+          "analysis_incomplete": true,
+          "scan_outcome_reason": "flax_msgpack_routing_incomplete"
+        },
+        "timestamp": 1784892819.2319114,
+        "type": "flax_msgpack_check",
+        "rule_code": "S902"
+      }
+    ],
+    "success": false,
+    "sbom_path": "results/openai-community--gpt2/sbom.json",
+    "stderr": null
   },
   "behavioral_scan": null,
   "vulnerability_scan": null,

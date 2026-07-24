@@ -1,0 +1,719 @@
+{
+  "bytes_scanned": 250783856,
+  "issues": [
+    {
+      "message": "Pickle serialization format detected: GLOBAL(3), REDUCE(394) opcodes detected",
+      "severity": "info",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+      "details": {
+        "cve_id": "CVE-2025-32434",
+        "pickle_filename": "archive/data.pkl",
+        "opcode_counts": {
+          "GLOBAL": 3,
+          "REDUCE": 394
+        },
+        "total_dangerous_opcodes": 397,
+        "unique_opcode_types": [
+          "GLOBAL",
+          "REDUCE"
+        ],
+        "code_execution_risks": [
+          "__reduce__ method exploitation",
+          "Direct code execution patterns",
+          "Module import and attribute access"
+        ],
+        "nested_execution_opcode_evidence": false,
+        "import_analysis": {
+          "total_imports": 3,
+          "all_legitimate": true,
+          "found_malicious": [],
+          "found_imports": [
+            "torch._utils._rebuild_tensor_v2",
+            "torch.HalfStorage",
+            "collections.OrderedDict"
+          ]
+        },
+        "safetensors_available": false,
+        "assessment": "legitimate_but_risky_format",
+        "vulnerability_description": "The weights_only=True parameter in torch.load() does not prevent code execution from pickle files, contrary to common security assumptions.",
+        "recommendation": "This model uses pickle serialization format which allows code execution by design (CVE-2025-32434). While the current opcodes appear legitimate, consider requesting a SafeTensors version from the publisher for improved supply chain security.",
+        "affected_pytorch_versions": "All versions \u22642.5.1",
+        "fixed_in": "PyTorch 2.6.0"
+      },
+      "timestamp": 1784892694.4961953,
+      "type": "pytorch_zip_check",
+      "rule_code": "S201"
+    },
+    {
+      "message": "Found source-backed allowlisted global without inert import initialization proof: torch._utils._rebuild_tensor_v2",
+      "severity": "warning",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 46)",
+      "details": {
+        "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+        "opcode": "GLOBAL",
+        "module": "torch._utils",
+        "name": "_rebuild_tensor_v2",
+        "import_reference": "torch._utils._rebuild_tensor_v2",
+        "position": 46,
+        "source_backed_import_initialization_untrusted": true,
+        "function": "_rebuild_tensor_v2",
+        "associated_global": "torch._utils._rebuild_tensor_v2",
+        "pickle_rule_code": "NON_ALLOWLISTED_GLOBAL",
+        "pickle_filename": "archive/data.pkl"
+      },
+      "why": "Source-backed framework metadata can execute module-level code when pickle resolves an unloaded GLOBAL; suppress it only when the module is already loaded or import-time initialization is proven inert.",
+      "timestamp": 1784892694.4599721,
+      "type": "pickle_check",
+      "rule_code": "NON_ALLOWLISTED_GLOBAL"
+    },
+    {
+      "message": "Found source-backed allowlisted global without inert import initialization proof: torch.HalfStorage",
+      "severity": "warning",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 97)",
+      "details": {
+        "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+        "opcode": "GLOBAL",
+        "module": "torch",
+        "name": "HalfStorage",
+        "import_reference": "torch.HalfStorage",
+        "position": 97,
+        "source_backed_import_initialization_untrusted": true,
+        "function": "HalfStorage",
+        "associated_global": "torch.HalfStorage",
+        "pickle_rule_code": "NON_ALLOWLISTED_GLOBAL",
+        "pickle_filename": "archive/data.pkl"
+      },
+      "why": "Source-backed framework metadata can execute module-level code when pickle resolves an unloaded GLOBAL; suppress it only when the module is already loaded or import-time initialization is proven inert.",
+      "timestamp": 1784892694.4601636,
+      "type": "pickle_check",
+      "rule_code": "NON_ALLOWLISTED_GLOBAL"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Path Exists",
+      "status": "passed",
+      "message": "Path exists",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9"
+      },
+      "timestamp": 1784892692.7794795
+    },
+    {
+      "name": "Path Readable",
+      "status": "passed",
+      "message": "Path is readable",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9"
+      },
+      "timestamp": 1784892692.7795053
+    },
+    {
+      "name": "File Type Validation",
+      "status": "passed",
+      "message": "File type validation passed",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892692.779533
+    },
+    {
+      "name": "File Integrity Hash",
+      "status": "passed",
+      "message": "File integrity hashes calculated",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "md5": "10856cddbfd4f94bd0862c3d2a237703",
+        "sha256": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+        "sha512": "855947e1ad810666379bf42ea27a614a425499194609ea06815730cd602862aeb72e2555e36efcd92eda7226c3f8a99663e2df857fe0f3a9ed5b40998f40a3d6",
+        "file_size": 250540281
+      },
+      "timestamp": 1784892693.66854
+    },
+    {
+      "name": "ZIP Format Validation",
+      "status": "passed",
+      "message": "Valid ZIP format detected",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892693.6686409
+    },
+    {
+      "name": "Archive Entry Limit",
+      "status": "passed",
+      "message": "Archive entry count (198) is within limits",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "entry_count": 198,
+        "max_entries": 10000
+      },
+      "timestamp": 1784892693.6738143
+    },
+    {
+      "name": "Path Traversal Protection",
+      "status": "passed",
+      "message": "All archive entries have safe paths",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "entries_checked": 198
+      },
+      "timestamp": 1784892693.6799412
+    },
+    {
+      "name": "Symlink Safety Validation",
+      "status": "passed",
+      "message": "No symlinks detected in archive entries",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892693.6799595
+    },
+    {
+      "name": "Compression Ratio Check",
+      "status": "passed",
+      "message": "All archive entries have safe compression ratios",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "entries_checked": 198,
+        "threshold": 100,
+        "min_uncompressed_size": 1048576
+      },
+      "timestamp": 1784892693.6799705
+    },
+    {
+      "name": "Duplicate ZIP Entry Collision",
+      "status": "passed",
+      "message": "No conflicting duplicate ZIP entries found in archive entries",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "entries_checked": 198
+      },
+      "timestamp": 1784892693.6799793
+    },
+    {
+      "name": "PyTorch Version Provenance",
+      "status": "passed",
+      "message": "Artifact contains PyTorch archive version metadata from archive/version; active scanner/runtime PyTorch is 2.13.0. Producer metadata is provenance and is not used by itself for runtime CVE applicability.",
+      "severity": "info",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "producer_pytorch_version": null,
+        "producer_pytorch_version_source": "archive/version",
+        "pytorch_archive_version": "3",
+        "installed_pytorch_version": "2.13.0",
+        "installed_pytorch_metadata_path": "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/torch-2.13.0.dist-info",
+        "active_runtime_version": "2.13.0",
+        "active_runtime_version_source": "local_environment",
+        "runtime_version_known": true,
+        "runtime_cve_version_gate": "local_environment_only"
+      },
+      "timestamp": 1784892693.7803252
+    },
+    {
+      "name": "CVE-2026-24747 PyTorch Version Check",
+      "status": "passed",
+      "message": "Local PyTorch 2.13.0 is not vulnerable to CVE-2026-24747 (fixed in 2.10.0+).",
+      "severity": "info",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "cve_id": "CVE-2026-24747",
+        "detected_pytorch_version": "2.13.0",
+        "pytorch_version_source": "local_environment",
+        "installed_pytorch_version": "2.13.0",
+        "installed_pytorch_metadata_path": "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/torch-2.13.0.dist-info",
+        "runtime_version_known": true,
+        "runtime_cve_applicability": "not_vulnerable",
+        "fixed_in": "PyTorch 2.10.0"
+      },
+      "timestamp": 1784892693.7805474
+    },
+    {
+      "name": "CVE-2025-32434 Pickle Format Security Analysis",
+      "status": "failed",
+      "message": "Pickle serialization format detected: GLOBAL(3), REDUCE(394) opcodes detected",
+      "severity": "info",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+      "details": {
+        "cve_id": "CVE-2025-32434",
+        "pickle_filename": "archive/data.pkl",
+        "opcode_counts": {
+          "GLOBAL": 3,
+          "REDUCE": 394
+        },
+        "total_dangerous_opcodes": 397,
+        "unique_opcode_types": [
+          "GLOBAL",
+          "REDUCE"
+        ],
+        "code_execution_risks": [
+          "__reduce__ method exploitation",
+          "Direct code execution patterns",
+          "Module import and attribute access"
+        ],
+        "nested_execution_opcode_evidence": false,
+        "import_analysis": {
+          "total_imports": 3,
+          "all_legitimate": true,
+          "found_malicious": [],
+          "found_imports": [
+            "torch._utils._rebuild_tensor_v2",
+            "torch.HalfStorage",
+            "collections.OrderedDict"
+          ]
+        },
+        "safetensors_available": false,
+        "assessment": "legitimate_but_risky_format",
+        "vulnerability_description": "The weights_only=True parameter in torch.load() does not prevent code execution from pickle files, contrary to common security assumptions.",
+        "recommendation": "This model uses pickle serialization format which allows code execution by design (CVE-2025-32434). While the current opcodes appear legitimate, consider requesting a SafeTensors version from the publisher for improved supply chain security.",
+        "affected_pytorch_versions": "All versions \u22642.5.1",
+        "fixed_in": "PyTorch 2.6.0"
+      },
+      "rule_code": "S201",
+      "timestamp": 1784892694.4961724
+    },
+    {
+      "name": "Standalone Pickle Finding",
+      "status": "failed",
+      "message": "Standalone Pickle Finding found 2 issues",
+      "severity": "warning",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 144)",
+      "details": {
+        "component_count": 3,
+        "findings": [
+          {
+            "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+            "opcode": "GLOBAL",
+            "module": "torch._utils",
+            "name": "_rebuild_tensor_v2",
+            "import_reference": "torch._utils._rebuild_tensor_v2",
+            "position": 46,
+            "source_backed_import_initialization_untrusted": true,
+            "function": "_rebuild_tensor_v2",
+            "associated_global": "torch._utils._rebuild_tensor_v2",
+            "pickle_rule_code": "NON_ALLOWLISTED_GLOBAL",
+            "pickle_filename": "archive/data.pkl"
+          },
+          {
+            "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+            "opcode": "GLOBAL",
+            "module": "torch",
+            "name": "HalfStorage",
+            "import_reference": "torch.HalfStorage",
+            "position": 97,
+            "source_backed_import_initialization_untrusted": true,
+            "function": "HalfStorage",
+            "associated_global": "torch.HalfStorage",
+            "pickle_rule_code": "NON_ALLOWLISTED_GLOBAL",
+            "pickle_filename": "archive/data.pkl"
+          }
+        ]
+      },
+      "why": "Source-backed framework metadata can execute module-level code when pickle resolves an unloaded GLOBAL; suppress it only when the module is already loaded or import-time initialization is proven inert.",
+      "timestamp": 1784892694.4601538
+    },
+    {
+      "name": "Standalone Pickle Notice",
+      "status": "passed",
+      "message": "Standalone Pickle Notice completed successfully",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 144)",
+      "details": {
+        "component_count": 2
+      },
+      "timestamp": 1784892694.4603136
+    },
+    {
+      "name": "Standalone Pickle Import",
+      "status": "passed",
+      "message": "Observed pickle global import: collections.OrderedDict",
+      "severity": "info",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl (pos 165)",
+      "details": {
+        "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+        "opcode": "GLOBAL",
+        "module": "collections",
+        "name": "OrderedDict",
+        "import_reference": "collections.OrderedDict",
+        "position": 165,
+        "is_dangerous": false,
+        "requires_origin_verification": true,
+        "function": "OrderedDict",
+        "associated_global": "collections.OrderedDict",
+        "pickle_filename": "archive/data.pkl"
+      },
+      "timestamp": 1784892694.4604404
+    },
+    {
+      "name": "File Integrity Check",
+      "status": "passed",
+      "message": "Stream SHA256 hash calculated",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+      "details": {
+        "sha256": "09a6267bc598c1878856c2e7d33ddba6e45eb54c5e5f73e73c9dcc40e982d190",
+        "bytes_hashed": 24729,
+        "hash_complete": true,
+        "pickle_filename": "archive/data.pkl"
+      },
+      "timestamp": 1784892694.4667296
+    },
+    {
+      "name": "JIT/Script Code Execution Detection",
+      "status": "passed",
+      "message": "No JIT/Script code execution risks detected",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892694.8990002
+    },
+    {
+      "name": "Network Communication Detection",
+      "status": "passed",
+      "message": "No network communication patterns detected",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892694.8990262
+    },
+    {
+      "name": "Python Code File Detection",
+      "status": "passed",
+      "message": "No unexpected Python code files found in model",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892694.8996947
+    },
+    {
+      "name": "Executable File Detection",
+      "status": "passed",
+      "message": "No executable files found in model",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {},
+      "timestamp": 1784892694.8997095
+    },
+    {
+      "name": "PyTorch Structure Validation",
+      "status": "passed",
+      "message": "PyTorch model has expected structure with data.pkl",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "pickle_files": [
+          "archive/data.pkl"
+        ]
+      },
+      "timestamp": 1784892694.899741
+    },
+    {
+      "name": "Blacklist Pattern Check",
+      "status": "passed",
+      "message": "No blacklist patterns configured for scanning",
+      "severity": "info",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "details": {
+        "reason": "no_blacklist_configured",
+        "entries_available": 198
+      },
+      "timestamp": 1784892694.8997545
+    },
+    {
+      "name": "Path Exists",
+      "status": "passed",
+      "message": "Path exists",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a"
+      },
+      "timestamp": 1784892694.906377
+    },
+    {
+      "name": "Path Readable",
+      "status": "passed",
+      "message": "Path is readable",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a"
+      },
+      "timestamp": 1784892694.9063964
+    },
+    {
+      "name": "File Type Validation",
+      "status": "passed",
+      "message": "File type validation passed",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "details": {},
+      "timestamp": 1784892694.906447
+    },
+    {
+      "name": "Keras H5 File-Backed Inspection",
+      "status": "passed",
+      "message": "Keras H5 inspection uses file-backed HDF5 metadata traversal",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "details": {
+        "file_size": 250709016,
+        "file_backed": true,
+        "whole_file_materialized": false,
+        "whole_file_hash_skipped": false,
+        "max_hdf5_link_visits": 4096,
+        "max_hdf5_json_attribute_bytes": 10485760
+      },
+      "timestamp": 1784892694.9065
+    },
+    {
+      "name": "File Integrity Hash",
+      "status": "passed",
+      "message": "File integrity hashes calculated",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "details": {
+        "md5": "a59e744e69aeba511bd648c17d31b3a1",
+        "sha256": "db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+        "sha512": "5276d8157e888391b7bd385a820134f258ba5371dd24e4a0e521a88e6c969f18f836378655de92ae65476f99153f1b7da0709181535324e1a7fcac5f58e06876",
+        "file_size": 250709016
+      },
+      "timestamp": 1784892695.7944324
+    },
+    {
+      "name": "Keras Model Format Check",
+      "status": "passed",
+      "message": "File does not appear to be a Keras model (no model_config attribute)",
+      "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "details": {
+        "format": "generic_h5"
+      },
+      "timestamp": 1784892695.8938937
+    }
+  ],
+  "files_scanned": 3,
+  "assets": [
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/b3fb716a3024261980becb2382e31a3780985130",
+      "type": "unknown"
+    },
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "type": "pytorch_zip",
+      "size": 250540281
+    },
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+      "type": "keras_h5",
+      "size": 250709016
+    }
+  ],
+  "has_errors": false,
+  "scanner_names": [
+    "pytorch_zip",
+    "keras_h5"
+  ],
+  "file_metadata": {
+    "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/b3fb716a3024261980becb2382e31a3780985130": {
+      "member_file_hashes": {},
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784892692.736059,
+      "scanner_dependency_ids": [
+        "unknown"
+      ],
+      "content_hash": "54162c9cd0377110df1859dfabebb106fc0988c8aadb88207ce1ee0d34985df6"
+    },
+    "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9": {
+      "file_size": 250540281,
+      "file_hashes": {
+        "md5": "10856cddbfd4f94bd0862c3d2a237703",
+        "sha256": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+        "sha512": "855947e1ad810666379bf42ea27a614a425499194609ea06815730cd602862aeb72e2555e36efcd92eda7226c3f8a99663e2df857fe0f3a9ed5b40998f40a3d6"
+      },
+      "member_file_hashes": {
+        "{\"occurrence\":1,\"path\":[\"archive/data.pkl\"]}": {
+          "file_hashes": {
+            "sha256": "09a6267bc598c1878856c2e7d33ddba6e45eb54c5e5f73e73c9dcc40e982d190"
+          },
+          "file_size": 24729,
+          "bytes_hashed": 24729,
+          "hash_complete": true,
+          "scanner_name": "pickle",
+          "logical_path": "archive/data.pkl",
+          "path_segments": [
+            "archive/data.pkl"
+          ],
+          "occurrence": 1
+        }
+      },
+      "member_file_hashes_total": 1,
+      "opcode_count": 6070,
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784892694.904441,
+      "scanner_dependency_ids": [
+        "pytorch_zip",
+        "pickle"
+      ],
+      "pickle_files": [
+        "archive/data.pkl"
+      ],
+      "pytorch_archive_version": "3",
+      "pytorch_version_source": "archive/version",
+      "opcode_counts": {
+        "EMPTY_DICT": 1,
+        "TUPLE1": 244,
+        "MARK": 395,
+        "STOP": 1,
+        "BINPUT": 256,
+        "BININT": 75,
+        "TUPLE": 394,
+        "EMPTY_TUPLE": 197,
+        "SETITEMS": 1,
+        "NEWFALSE": 197,
+        "BININT2": 469,
+        "TUPLE2": 150,
+        "BININT1": 394,
+        "BINPERSID": 197,
+        "BINGET": 981,
+        "REDUCE": 394,
+        "PROTO": 1,
+        "LONG_BINPUT": 1325,
+        "BINUNICODE": 395,
+        "GLOBAL": 3
+      },
+      "nested_opcode_counts": {},
+      "follow_on_opcode_counts": {},
+      "globals_count": 3,
+      "import_references": [
+        {
+          "opcode": "GLOBAL",
+          "module": "torch._utils",
+          "name": "_rebuild_tensor_v2",
+          "import_reference": "torch._utils._rebuild_tensor_v2",
+          "position": 46,
+          "is_dangerous": false,
+          "requires_origin_verification": true
+        },
+        {
+          "opcode": "GLOBAL",
+          "module": "torch",
+          "name": "HalfStorage",
+          "import_reference": "torch.HalfStorage",
+          "position": 97,
+          "is_dangerous": false,
+          "requires_origin_verification": true
+        },
+        {
+          "opcode": "GLOBAL",
+          "module": "collections",
+          "name": "OrderedDict",
+          "import_reference": "collections.OrderedDict",
+          "position": 165,
+          "is_dangerous": false,
+          "requires_origin_verification": true
+        }
+      ],
+      "import_references_truncated": false,
+      "callable_invocations": [
+        {
+          "opcode": "REDUCE",
+          "module": "collections",
+          "name": "OrderedDict",
+          "import_reference": "collections.OrderedDict",
+          "global_position": 165,
+          "opcode_position": 193,
+          "positional_arg_count": 0
+        },
+        {
+          "opcode": "REDUCE",
+          "module": "torch._utils",
+          "name": "_rebuild_tensor_v2",
+          "import_reference": "torch._utils._rebuild_tensor_v2",
+          "global_position": 46,
+          "opcode_position": 199,
+          "positional_arg_count": 6
+        }
+      ],
+      "callable_invocations_truncated": false,
+      "non_allowlisted_global_imports_truncated": false,
+      "protocols": [
+        2
+      ],
+      "first_pickle_end_pos": 24729,
+      "analysis_incomplete": true,
+      "pickle_report_status": "inconclusive",
+      "pickle_verdict": "suspicious",
+      "pickle_source": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+      "pickle_coverage": {
+        "bytes_scanned": 24729,
+        "bytes_total": 24729,
+        "opcode_count": 6070,
+        "raw_scan_complete": true,
+        "opcode_scan_complete": true
+      },
+      "scan_outcome": "inconclusive",
+      "scan_outcome_reasons": [
+        "pickle_analysis_incomplete"
+      ],
+      "pickle_primary_engine": "rust",
+      "pickle_cve_streams_analyzed": 1,
+      "pickle_secrets_raw_detector_skipped": true,
+      "pickle_jit_raw_detector_skipped": true,
+      "pickle_network_raw_detector_skipped": true,
+      "archive_file_size": 250540281,
+      "pickle_member_outcomes": [
+        {
+          "pickle_filename": "archive/data.pkl",
+          "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+          "analysis_state": "scanned",
+          "success": false,
+          "pickle_report_status": "inconclusive",
+          "pickle_verdict": "suspicious",
+          "scan_outcome": "inconclusive",
+          "max_severity": "warning",
+          "issue_count": 2,
+          "failed_check_count": 2
+        }
+      ],
+      "pickle_member_worst_outcome": {
+        "pickle_filename": "archive/data.pkl",
+        "location": "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9:archive/data.pkl",
+        "analysis_state": "scanned",
+        "success": false,
+        "pickle_report_status": "inconclusive",
+        "pickle_verdict": "suspicious",
+        "scan_outcome": "inconclusive",
+        "max_severity": "warning",
+        "issue_count": 2,
+        "failed_check_count": 2
+      },
+      "content_hash": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9"
+    },
+    "/home/runner/.cache/huggingface/hub/models--facebook--opt-125m/blobs/db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a": {
+      "file_size": 250709016,
+      "file_hashes": {
+        "md5": "a59e744e69aeba511bd648c17d31b3a1",
+        "sha256": "db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a",
+        "sha512": "5276d8157e888391b7bd385a820134f258ba5371dd24e4a0e521a88e6c969f18f836378655de92ae65476f99153f1b7da0709181535324e1a7fcac5f58e06876"
+      },
+      "member_file_hashes": {},
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784892695.9022715,
+      "scanner_dependency_ids": [
+        "keras_h5"
+      ],
+      "file_backed_scan": true,
+      "keras_version": "2.9.0",
+      "content_hash": "db7090b0c8b34dd957a7e0656c718f978f9203cc874018f37dda44108be5970a"
+    }
+  },
+  "content_hash": "bcb6fb1ad5570165e5af04bc90bf8f3539b4b482b286d952ed005dc7b5855d31",
+  "start_time": 1784892691.4247675,
+  "duration": 4.479163885116577,
+  "total_checks": 28,
+  "passed_checks": 27,
+  "failed_checks": 1,
+  "success": false
+}

@@ -1,0 +1,86 @@
+{
+  "components": [
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/cfb31a9c8583a9a3fe4d38bfaaf2fd08e3f8e23e",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "005e614952d930d7e8d0e4c472a2e43f297f1d8b54fda8dd067ba682bcf5a81c"
+        }
+      ],
+      "name": "cfb31a9c8583a9a3fe4d38bfaaf2fd08e3f8e23e",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "684"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c"
+        }
+      ],
+      "name": "177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "4860056"
+        }
+      ],
+      "type": "machine-learning-model"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/cfb31a9c8583a9a3fe4d38bfaaf2fd08e3f8e23e"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-07-24T11:33:20.117318+00:00"
+  },
+  "serialNumber": "urn:uuid:2ed9f793-5b1b-45ae-b060-3c359a2cf723",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

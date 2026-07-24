@@ -1,0 +1,21 @@
+{
+  "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+  "scan_date": "2026-07-24T11:35:45.671136",
+  "license": "llama3.2",
+  "base_model": null,
+  "dataset": {
+    "disclosed": "not disclosed",
+    "verification_level": "metadata_only"
+  },
+  "artifact_scan": {
+    "tool": "modelscan",
+    "status": "skipped_gated"
+  },
+  "artifact_scan_modelaudit": {
+    "tool": "modelaudit",
+    "status": "skipped_gated"
+  },
+  "behavioral_scan": null,
+  "vulnerability_scan": null,
+  "model_integrity_scan": null
+}

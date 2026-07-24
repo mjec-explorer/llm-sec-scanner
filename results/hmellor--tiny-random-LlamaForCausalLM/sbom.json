@@ -1,0 +1,86 @@
+{
+  "components": [
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/22a34e2dd850c832603f419165bc30a2224e756a",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dcbec8a5f89bf62e32cadc8d0cf20cddc61d41b25f2e0cf1b7e768eb1ac8433b"
+        }
+      ],
+      "name": "22a34e2dd850c832603f419165bc30a2224e756a",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "691"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10"
+        }
+      ],
+      "name": "542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10",
+      "properties": [
+        {
+          "name": "risk_score",
+          "value": "0"
+        },
+        {
+          "name": "security:scanned",
+          "value": "true"
+        },
+        {
+          "name": "security:scanner",
+          "value": "ModelAudit"
+        },
+        {
+          "name": "security:scanner_version",
+          "value": "v0.2.52"
+        },
+        {
+          "name": "size",
+          "value": "2128200"
+        }
+      ],
+      "type": "machine-learning-model"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/22a34e2dd850c832603f419165bc30a2224e756a"
+    },
+    {
+      "ref": "/home/runner/.cache/huggingface/hub/models--hmellor--tiny-random-LlamaForCausalLM/blobs/542b957bac6c891710a57fbf82a490e6e03e19218311634d340d13f282d66b10"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-07-24T11:40:01.766755+00:00"
+  },
+  "serialNumber": "urn:uuid:b0fca2ee-a78d-4f31-b7da-d6751808c12b",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

@@ -1,0 +1,284 @@
+{
+  "bytes_scanned": 4860740,
+  "issues": [],
+  "checks": [
+    {
+      "name": "Path Exists",
+      "status": "passed",
+      "message": "Path exists",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c"
+      },
+      "timestamp": 1784892800.090238
+    },
+    {
+      "name": "Path Readable",
+      "status": "passed",
+      "message": "Path is readable",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "path": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c"
+      },
+      "timestamp": 1784892800.0902615
+    },
+    {
+      "name": "File Type Validation",
+      "status": "passed",
+      "message": "File type validation passed",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {},
+      "timestamp": 1784892800.0902865
+    },
+    {
+      "name": "Header Length Validation",
+      "status": "passed",
+      "message": "SafeTensors header length is valid",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "header_len": 2784
+      },
+      "timestamp": 1784892800.0903661
+    },
+    {
+      "name": "Header Size Limit",
+      "status": "passed",
+      "message": "SafeTensors header is within configured size limit",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "header_len": 2784,
+        "max_allowed": 16777216
+      },
+      "timestamp": 1784892800.090378
+    },
+    {
+      "name": "File Integrity Hash",
+      "status": "passed",
+      "message": "File integrity hashes calculated",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "md5": "a29740d787bda05930e1792be98350de",
+        "sha256": "177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+        "sha512": "2fbaaffb1f5a7d22b3cd417804c716ba9a25f4807c7369d724b3420cd3fe9c0ba003a8db9ed3776c2e3ab1b4baa4d7e93b25e5c02eb742b1e0008f687df52d37",
+        "file_size": 4860056
+      },
+      "timestamp": 1784892800.1079478
+    },
+    {
+      "name": "Header Format Validation",
+      "status": "passed",
+      "message": "SafeTensors header format is valid JSON",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {},
+      "timestamp": 1784892800.1079786
+    },
+    {
+      "name": "SafeTensors Metadata Structure Validation",
+      "status": "passed",
+      "message": "SafeTensors custom metadata is a string-to-string map",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "entry_count": 1
+      },
+      "timestamp": 1784892800.1085486
+    },
+    {
+      "name": "Tensor Offset Validation",
+      "status": "passed",
+      "message": "Tensor lm_head.weight offsets are valid",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "tensor": "lm_head.weight",
+        "begin": 0,
+        "end": 2426640
+      },
+      "timestamp": 1784892800.1112962
+    },
+    {
+      "name": "Tensor Size Consistency Check",
+      "status": "passed",
+      "message": "Tensor lm_head.weight size matches dtype/shape",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "tensor": "lm_head.weight",
+        "size": 2426640
+      },
+      "timestamp": 1784892800.111324
+    },
+    {
+      "name": "Offset Continuity Check",
+      "status": "passed",
+      "message": "Tensor offsets are continuous without gaps",
+      "location": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "details": {
+        "total_offsets": 27
+      },
+      "timestamp": 1784892800.1114593
+    }
+  ],
+  "files_scanned": 2,
+  "assets": [
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/cfb31a9c8583a9a3fe4d38bfaaf2fd08e3f8e23e",
+      "type": "unknown"
+    },
+    {
+      "path": "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+      "type": "safetensors",
+      "size": 4860056,
+      "tensors": [
+        "lm_head.weight",
+        "model.embed_tokens.weight",
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.mlp.down_proj.weight",
+        "model.layers.0.mlp.gate_proj.weight",
+        "model.layers.0.mlp.up_proj.weight",
+        "model.layers.0.post_attention_layernorm.weight",
+        "model.layers.0.self_attn.k_proj.bias",
+        "model.layers.0.self_attn.k_proj.weight",
+        "model.layers.0.self_attn.o_proj.weight",
+        "model.layers.0.self_attn.q_proj.bias",
+        "model.layers.0.self_attn.q_proj.weight",
+        "model.layers.0.self_attn.v_proj.bias",
+        "model.layers.0.self_attn.v_proj.weight",
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.mlp.down_proj.weight",
+        "model.layers.1.mlp.gate_proj.weight",
+        "model.layers.1.mlp.up_proj.weight",
+        "model.layers.1.post_attention_layernorm.weight",
+        "model.layers.1.self_attn.k_proj.bias",
+        "model.layers.1.self_attn.k_proj.weight",
+        "model.layers.1.self_attn.o_proj.weight",
+        "model.layers.1.self_attn.q_proj.bias",
+        "model.layers.1.self_attn.q_proj.weight",
+        "model.layers.1.self_attn.v_proj.bias",
+        "model.layers.1.self_attn.v_proj.weight",
+        "model.norm.weight"
+      ]
+    }
+  ],
+  "has_errors": false,
+  "scanner_names": [
+    "safetensors"
+  ],
+  "file_metadata": {
+    "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/cfb31a9c8583a9a3fe4d38bfaaf2fd08e3f8e23e": {
+      "member_file_hashes": {},
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784892800.0871675,
+      "scanner_dependency_ids": [
+        "unknown"
+      ],
+      "content_hash": "005e614952d930d7e8d0e4c472a2e43f297f1d8b54fda8dd067ba682bcf5a81c"
+    },
+    "/home/runner/.cache/huggingface/hub/models--trl-internal-testing--tiny-Qwen2ForCausalLM-2.5/blobs/177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c": {
+      "file_size": 4860056,
+      "file_hashes": {
+        "md5": "a29740d787bda05930e1792be98350de",
+        "sha256": "177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c",
+        "sha512": "2fbaaffb1f5a7d22b3cd417804c716ba9a25f4807c7369d724b3420cd3fe9c0ba003a8db9ed3776c2e3ab1b4baa4d7e93b25e5c02eb742b1e0008f687df52d37"
+      },
+      "member_file_hashes": {},
+      "license_info": [],
+      "copyright_notices": [],
+      "license_files_nearby": [],
+      "is_dataset": false,
+      "is_model": false,
+      "risk_score": 0.0,
+      "scan_timestamp": 1784892800.1158617,
+      "scanner_dependency_ids": [
+        "safetensors"
+      ],
+      "has_custom_metadata": true,
+      "custom_metadata_valid": true,
+      "custom_metadata_entry_count": 1,
+      "tensor_count": 27,
+      "tensors": [
+        "lm_head.weight",
+        "model.embed_tokens.weight",
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.mlp.down_proj.weight",
+        "model.layers.0.mlp.gate_proj.weight",
+        "model.layers.0.mlp.up_proj.weight",
+        "model.layers.0.post_attention_layernorm.weight",
+        "model.layers.0.self_attn.k_proj.bias",
+        "model.layers.0.self_attn.k_proj.weight",
+        "model.layers.0.self_attn.o_proj.weight",
+        "model.layers.0.self_attn.q_proj.bias",
+        "model.layers.0.self_attn.q_proj.weight",
+        "model.layers.0.self_attn.v_proj.bias",
+        "model.layers.0.self_attn.v_proj.weight",
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.mlp.down_proj.weight",
+        "model.layers.1.mlp.gate_proj.weight",
+        "model.layers.1.mlp.up_proj.weight",
+        "model.layers.1.post_attention_layernorm.weight",
+        "model.layers.1.self_attn.k_proj.bias",
+        "model.layers.1.self_attn.k_proj.weight",
+        "model.layers.1.self_attn.o_proj.weight",
+        "model.layers.1.self_attn.q_proj.bias",
+        "model.layers.1.self_attn.q_proj.weight",
+        "model.layers.1.self_attn.v_proj.bias",
+        "model.layers.1.self_attn.v_proj.weight",
+        "model.norm.weight"
+      ],
+      "tensor_count_reported": 27,
+      "tensor_metadata_truncated": false,
+      "max_reported_tensors": 1024,
+      "tensor_name_utf8_bytes": 948,
+      "max_tensor_name_utf8_bytes": 46,
+      "tensor_name_preview_truncated_count": 0,
+      "tensor_names_digest": "48d7916935510703b22d43125e69a6243d996c2a8f6b2df4fa3f5bc7ec198007",
+      "custom_metadata_security_record_counts": {
+        "Metadata Length Check": {
+          "failed": 0,
+          "reported": 0
+        },
+        "Metadata Code Pattern Check": {
+          "failed": 0,
+          "reported": 0
+        },
+        "Metadata Pattern Check": {
+          "failed": 0,
+          "reported": 0
+        }
+      },
+      "custom_metadata_length_finding_count": 0,
+      "custom_metadata_length_findings_truncated": false,
+      "custom_metadata_code_pattern_finding_count": 0,
+      "custom_metadata_code_pattern_findings_truncated": false,
+      "custom_metadata_pattern_finding_count": 0,
+      "custom_metadata_pattern_findings_truncated": false,
+      "tensor_name_injection_count": 0,
+      "tensor_name_injection_findings_truncated": false,
+      "tensor_metadata_injection_count": 0,
+      "tensor_metadata_injection_findings_truncated": false,
+      "custom_metadata_security_flags": [],
+      "tensor_validation_record_counts": {
+        "Tensor Offset Validation": {
+          "passed": 27,
+          "failed": 0,
+          "reported": 1
+        },
+        "Tensor Size Consistency Check": {
+          "passed": 27,
+          "failed": 0,
+          "reported": 1
+        }
+      },
+      "content_hash": "177d85364f32785aedc9818884950745025ee84b7d749a5bab8389b3b160be5c"
+    }
+  },
+  "content_hash": "1b5940f5bdb9939f9a0166f676f736236f0f522aeca72034f73c0b3611188d21",
+  "start_time": 1784892799.0843809,
+  "duration": 1.0328683853149414,
+  "total_checks": 11,
+  "passed_checks": 11,
+  "failed_checks": 0,
+  "success": true
+}
